@@ -4,112 +4,265 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="A clean, responsive landing page template built with HTML, CSS, and vanilla JavaScript. Free to use and customize." />
-  <meta property="og:title" content="Placeholder Demo" />
-  <meta property="og:description" content="A clean, responsive landing page template built with HTML, CSS, and vanilla JavaScript." />
+  <meta name="description" content="A clean, responsive multi-page website template built with HTML, CSS, and vanilla JavaScript. Free to use and customize." />
+  <meta property="og:title" content="Placeholder — Website Template" />
+  <meta property="og:description" content="A production-ready, responsive website template built with pure HTML, CSS, and JavaScript." />
   <meta property="og:type" content="website" />
-  <title>Placeholder Demo</title>
+  <title>Placeholder — Home</title>
   <link rel="icon" href="./favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Leckerli+One&family=Playfair+Display:wght@700&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous" />
   <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
-    integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous" />
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Leckerli+One&family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <nav class="navbar">
-    <div class="navbar__container">
-      <a href="#home" id="navbar__logo">Placeholder</a>
-      <button class="navbar__toggle" id="mobile-menu" aria-label="Toggle navigation menu" aria-expanded="false">
-        <span class="bar"></span> <span class="bar"></span>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav__container">
+      <a href="./index.html" class="nav__logo">Placeholder</a>
+      <ul class="nav__menu" id="nav-menu">
+        <li><a href="./index.html" class="nav__link active">Home</a></li>
+        <li><a href="./pages/about.html" class="nav__link">About</a></li>
+        <li><a href="./pages/services.html" class="nav__link">Services</a></li>
+        <li><a href="./pages/contact.html" class="nav__link">Contact</a></li>
+        <li><a href="./pages/contact.html" class="nav__cta">Get Started</a></li>
+      </ul>
+      <button class="nav__toggle" id="mobile-menu" aria-label="Toggle navigation" aria-expanded="false">
+        <span class="bar"></span>
+        <span class="bar"></span>
         <span class="bar"></span>
       </button>
-      <ul class="navbar__menu">
-        <li class="navbar__item">
-          <a href="#home" class="navbar__links" id="home-page">Home</a>
-        </li>
-        <li class="navbar__item">
-          <a href="#about" class="navbar__links" id="about-page">About</a>
-        </li>
-        <li class="navbar__item">
-          <a href="#services" class="navbar__links" id="services-page">Services</a>
-        </li>
-        <li class="navbar__btn">
-          <a href="#services" class="button" id="signup">Get Started</a>
-        </li>
-      </ul>
     </div>
   </nav>
 
   <main>
-  <div class="hero" id="home">
-    <div class="hero__container">
-      <h1 class="hero__heading">Why choose <span>Us</span></h1>
-      <p class="hero__description">Unlimited Possibilities</p>
-      <button class="main__btn"><a href="#services">Explore</a></button>
-    </div>
-  </div>
 
-  <div class="main" id="about">
-    <div class="main__container">
-      <div class="main__content">
-        <h2>What do we do?</h2>
-        <h3>We develop all sorts of products</h3>
-        <p>Check out our services</p>
-        <button class="main__btn"><a href="#">Schedule Call</a></button>
-      </div>
-      <div class="main__img--container">
-        <div class="main__img--card"><i style="font-size: 12rem" class="far fa-address-card"></i></div>
-      </div>
-    </div>
-  </div>
-
-  <div class="services" id="services">
-    <h2>Our Services</h2>
-    <div class="services__wrapper">
-      <div class="services__card">
-        <h2>Custom</h2>
-        <p>Custom Text</p>
-        <div class="services__btn"><button>Get Started</button></div>
-      </div>
-      <div class="services__card">
-        <h2>Custom</h2>
-        <p>Custom Text</p>
-        <div class="services__btn"><button>Get Started</button></div>
-      </div>
-      <div class="services__card">
-        <h2>Custom</h2>
-        <p>Custom Text</p>
-        <div class="services__btn"><button>Get Started</button></div>
-      </div>
-      <div class="services__card">
-        <h2>Custom</h2>
-        <p>Custom Text</p>
-        <div class="services__btn"><button>Get Started</button></div>
-      </div>
-    </div>
-  </div>
-
-  </main>
-
-  <div class="footer__container">
-    <section class="social__media">
-      <div class="social__media--wrap">
-        <div class="footer__logo">
-          <a href="/" id="footer__logo">Placeholder</a>
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="hero__container container">
+        <div class="hero__content">
+          <span class="hero__label">
+            <i class="fas fa-bolt"></i> Built for speed &amp; simplicity
+          </span>
+          <h1 class="hero__heading">
+            Build your next<br /><span class="gradient-text">great product</span>
+          </h1>
+          <p class="hero__description">
+            A clean, responsive website template to kickstart any project.
+            Customize, extend, and ship faster — no frameworks required.
+          </p>
+          <div class="hero__actions">
+            <a href="./pages/services.html" class="btn btn--primary btn--lg">
+              Explore Services <i class="fas fa-arrow-right"></i>
+            </a>
+            <a href="./pages/about.html" class="btn btn--outline btn--lg">Learn More</a>
+          </div>
         </div>
-        <p class="website__rights">©2024 Placeholder. All rights reserved</p>
-        <div class="social__icons">
-          <a href="/" class="social__icon--link" target="_blank"><i class="fab fa-facebook"></i></a>
-          <a href="/" class="social__icon--link"><i class="fab fa-instagram"></i></a>
-          <a href="/" class="social__icon--link"><i class="fab fa-youtube"></i></a>
-          <a href="/" class="social__icon--link"><i class="fab fa-linkedin"></i></a>
-          <a href="/" class="social__icon--link"><i class="fab fa-twitter"></i></a>
+        <div class="hero__visual">
+          <div class="hero__card">
+            <div class="hero__card-icon">
+              <i class="fas fa-rocket"></i>
+            </div>
+            <h3>Ready to Launch</h3>
+            <p>Everything you need to build and ship a professional website, right out of the box.</p>
+            <div class="hero__card-tags">
+              <span class="hero__tag">Responsive</span>
+              <span class="hero__tag">Accessible</span>
+              <span class="hero__tag">Vanilla JS</span>
+              <span class="hero__tag">No Build Step</span>
+            </div>
+            <div class="hero__badge">
+              <span class="hero__badge-dot"></span>
+              Production Ready
+            </div>
+          </div>
         </div>
       </div>
     </section>
-  </div>
+
+    <!-- TICKER -->
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker__track">
+        <span class="ticker__item"><i class="fas fa-star"></i> 10,000+ Happy Users</span>
+        <span class="ticker__sep">·</span>
+        <span class="ticker__item"><i class="fas fa-rocket"></i> 500+ Projects Shipped</span>
+        <span class="ticker__sep">·</span>
+        <span class="ticker__item"><i class="fas fa-code"></i> Vanilla HTML / CSS / JS</span>
+        <span class="ticker__sep">·</span>
+        <span class="ticker__item"><i class="fas fa-mobile-alt"></i> Fully Responsive</span>
+        <span class="ticker__sep">·</span>
+        <span class="ticker__item"><i class="fas fa-lock"></i> MIT Licensed</span>
+        <span class="ticker__sep">·</span>
+        <span class="ticker__item"><i class="fas fa-paint-brush"></i> Easy to Customize</span>
+        <span class="ticker__sep">·</span>
+        <!-- Duplicate for seamless loop -->
+        <span class="ticker__item"><i class="fas fa-star"></i> 10,000+ Happy Users</span>
+        <span class="ticker__sep">·</span>
+        <span class="ticker__item"><i class="fas fa-rocket"></i> 500+ Projects Shipped</span>
+        <span class="ticker__sep">·</span>
+        <span class="ticker__item"><i class="fas fa-code"></i> Vanilla HTML / CSS / JS</span>
+        <span class="ticker__sep">·</span>
+        <span class="ticker__item"><i class="fas fa-mobile-alt"></i> Fully Responsive</span>
+        <span class="ticker__sep">·</span>
+        <span class="ticker__item"><i class="fas fa-lock"></i> MIT Licensed</span>
+        <span class="ticker__sep">·</span>
+        <span class="ticker__item"><i class="fas fa-paint-brush"></i> Easy to Customize</span>
+        <span class="ticker__sep">·</span>
+      </div>
+    </div>
+
+    <!-- ABOUT PREVIEW -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="about-home__grid">
+          <div class="about-home__visual reveal">
+            <div class="about-home__main-card">
+              <i class="fas fa-layer-group"></i>
+            </div>
+            <div class="about-home__float-card">
+              <div class="about-home__float-icon">
+                <i class="fas fa-users"></i>
+              </div>
+              <div class="about-home__float-text">
+                <strong>10,000+ Users</strong>
+                <span>Trust this template</span>
+              </div>
+            </div>
+          </div>
+          <div class="reveal">
+            <span class="section__label">About Us</span>
+            <h2 class="section__heading">We build products people <span class="gradient-text">love to use</span></h2>
+            <p class="section__subtext">
+              We're a team passionate about clean design, great user experiences,
+              and helping businesses put their best foot forward on the web.
+            </p>
+            <ul class="about-home__list">
+              <li class="about-home__item">
+                <span class="about-home__check"><i class="fas fa-check"></i></span>
+                <p>Pixel-perfect, responsive layouts that work on any device.</p>
+              </li>
+              <li class="about-home__item">
+                <span class="about-home__check"><i class="fas fa-check"></i></span>
+                <p>Built on semantic HTML with accessibility baked in.</p>
+              </li>
+              <li class="about-home__item">
+                <span class="about-home__check"><i class="fas fa-check"></i></span>
+                <p>Zero dependencies — easy to customize and extend.</p>
+              </li>
+            </ul>
+            <a href="./pages/about.html" class="btn btn--primary" style="margin-top: 36px;">
+              Meet the Team <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section section--muted" id="services">
+      <div class="container">
+        <div class="section__header section__header--center">
+          <span class="section__label">What We Do</span>
+          <h2 class="section__heading">Services built to <span class="gradient-text">grow with you</span></h2>
+          <p class="section__subtext">From design to deployment, we cover every stage of your product journey.</p>
+        </div>
+        <div class="services__grid">
+          <div class="service-card reveal">
+            <div class="service-card__icon"><i class="fas fa-code"></i></div>
+            <h3 class="service-card__title">Web Development</h3>
+            <p class="service-card__text">Custom websites and web apps built for performance, SEO, and a great user experience.</p>
+            <a href="./pages/services.html" class="service-card__link">Learn more <i class="fas fa-arrow-right"></i></a>
+          </div>
+          <div class="service-card reveal">
+            <div class="service-card__icon"><i class="fas fa-mobile-alt"></i></div>
+            <h3 class="service-card__title">Mobile Apps</h3>
+            <p class="service-card__text">Cross-platform mobile applications that deliver native-like experiences on iOS and Android.</p>
+            <a href="./pages/services.html" class="service-card__link">Learn more <i class="fas fa-arrow-right"></i></a>
+          </div>
+          <div class="service-card reveal">
+            <div class="service-card__icon"><i class="fas fa-paint-brush"></i></div>
+            <h3 class="service-card__title">UI/UX Design</h3>
+            <p class="service-card__text">Thoughtful interfaces grounded in user research, designed to convert and delight.</p>
+            <a href="./pages/services.html" class="service-card__link">Learn more <i class="fas fa-arrow-right"></i></a>
+          </div>
+          <div class="service-card reveal">
+            <div class="service-card__icon"><i class="fas fa-chart-line"></i></div>
+            <h3 class="service-card__title">Growth &amp; SEO</h3>
+            <p class="service-card__text">Data-driven strategies to increase visibility, drive traffic, and grow your business online.</p>
+            <a href="./pages/services.html" class="service-card__link">Learn more <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA BANNER -->
+    <section class="cta-banner">
+      <div class="container">
+        <div class="cta-banner__content">
+          <h2>Ready to build something <em>great?</em></h2>
+          <p>Let's talk about your project. We'll help you find the right approach and get you started.</p>
+          <div class="cta-banner__actions">
+            <a href="./pages/contact.html" class="btn btn--white btn--lg">Get in Touch</a>
+            <a href="./pages/services.html" class="btn btn--ghost btn--lg">View Pricing</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <a href="./index.html" class="footer__logo">Placeholder</a>
+          <p class="footer__tagline">A clean, responsive website template. Customize it, make it yours, and ship faster.</p>
+          <div class="footer__socials">
+            <a href="/" class="footer__social" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="/" class="footer__social" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="/" class="footer__social" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="/" class="footer__social" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="/" class="footer__social" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <div>
+          <p class="footer__col-title">Quick Links</p>
+          <ul class="footer__links">
+            <li><a href="./index.html" class="footer__link">Home</a></li>
+            <li><a href="./pages/about.html" class="footer__link">About</a></li>
+            <li><a href="./pages/services.html" class="footer__link">Services</a></li>
+            <li><a href="./pages/contact.html" class="footer__link">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer__col-title">Services</p>
+          <ul class="footer__links">
+            <li><a href="./pages/services.html" class="footer__link">Web Development</a></li>
+            <li><a href="./pages/services.html" class="footer__link">Mobile Apps</a></li>
+            <li><a href="./pages/services.html" class="footer__link">UI/UX Design</a></li>
+            <li><a href="./pages/services.html" class="footer__link">Growth &amp; SEO</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer__col-title">Contact</p>
+          <ul class="footer__links">
+            <li><a href="mailto:hello@placeholder.com" class="footer__link">hello@placeholder.com</a></li>
+            <li><a href="tel:+11234567890" class="footer__link">+1 (123) 456-7890</a></li>
+            <li><span class="footer__link">123 Main Street</span></li>
+            <li><span class="footer__link">New York, NY 10001</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&#169; 2024 Placeholder. All rights reserved.</p>
+        <p>MIT License — free to use and customize.</p>
+      </div>
+    </div>
+  </footer>
 
   <script src="app.js"></script>
 </body>

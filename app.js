@@ -1,46 +1,66 @@
-const menu = document.querySelector('#mobile-menu');
-const menuLinks = document.querySelector('.navbar__menu');
-const navLogo = document.querySelector('#navbar__logo');
+/* ============================================
+   NAVBAR: Scroll effect + mobile toggle
+   ============================================ */
+const navbar = document.getElementById('navbar');
+const mobileMenuBtn = document.getElementById('mobile-menu');
+const navMenu = document.getElementById('nav-menu');
 
-const mobileMenu = () => {
-  const isActive = menu.classList.toggle('is-active');
-  menuLinks.classList.toggle('active');
-  menu.setAttribute('aria-expanded', isActive);
-};
+// Add scrolled class for navbar shadow/border
+window.addEventListener('scroll', () => {
+  navbar.classList.toggle('scrolled', window.scrollY > 10);
+});
 
-menu.addEventListener('click', mobileMenu);
+// Mobile menu toggle
+mobileMenuBtn.addEventListener('click', () => {
+  const isActive = mobileMenuBtn.classList.toggle('is-active');
+  navMenu.classList.toggle('active');
+  mobileMenuBtn.setAttribute('aria-expanded', isActive);
+});
 
-// Highlight active nav link based on which section is visible
-const sections = document.querySelectorAll('#home, #about, #services');
-const navLinks = {
-  home: document.querySelector('#home-page'),
-  about: document.querySelector('#about-page'),
-  services: document.querySelector('#services-page'),
-};
+// Close mobile menu when a link is clicked
+navMenu.addEventListener('click', (e) => {
+  if (e.target.classList.contains('nav__link') || e.target.classList.contains('nav__cta')) {
+    mobileMenuBtn.classList.remove('is-active');
+    navMenu.classList.remove('active');
+    mobileMenuBtn.setAttribute('aria-expanded', 'false');
+  }
+});
 
-const observer = new IntersectionObserver(
+/* ============================================
+   ACTIVE NAV LINK: Detect current page by URL
+   ============================================ */
+const currentFile = window.location.pathname.split('/').pop() || 'index.html';
+document.querySelectorAll('.nav__link').forEach((link) => {
+  const linkFile = link.getAttribute('href').split('/').pop();
+  if (linkFile === currentFile) {
+    link.classList.add('active');
+  } else {
+    link.classList.remove('active');
+  }
+});
+
+/* ============================================
+   REVEAL ANIMATIONS: IntersectionObserver
+   ============================================ */
+const revealObserver = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        Object.values(navLinks).forEach((link) => link.classList.remove('highlight'));
-        const activeLink = navLinks[entry.target.id];
-        if (activeLink) activeLink.classList.add('highlight');
+        const el = entry.target;
+        const delay = parseInt(el.dataset.delay || 0, 10);
+        setTimeout(() => el.classList.add('visible'), delay);
+        revealObserver.unobserve(el);
       }
     });
   },
-  { threshold: 0.4 }
+  { threshold: 0.1 }
 );
 
-sections.forEach((section) => observer.observe(section));
-
-const hideMobileMenu = () => {
-  const menuBars = document.querySelector('.is-active');
-  if (window.innerWidth <= 768 && menuBars) {
-    menu.classList.toggle('is-active');
-    menu.setAttribute('aria-expanded', 'false');
-    menuLinks.classList.remove('active');
-  }
-};
-
-menuLinks.addEventListener('click', hideMobileMenu);
-navLogo.addEventListener('click', hideMobileMenu);
+// Auto-stagger sibling .reveal elements
+document.querySelectorAll('.reveal').forEach((el) => {
+  const siblings = Array.from(el.parentElement.children).filter((c) =>
+    c.classList.contains('reveal')
+  );
+  el.dataset.delay = siblings.indexOf(el) * 90;
+  revealObserver.observe(el);
+});
