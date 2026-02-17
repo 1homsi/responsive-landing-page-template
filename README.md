@@ -1,25 +1,23 @@
 # Responsive Landing Page Template
 
-A clean, modern, and fully responsive landing page template built with vanilla HTML, CSS, and JavaScript. No frameworks, no dependencies — just copy, customize, and ship.
+A clean, modern, and fully responsive multi-page website template built with vanilla HTML, CSS, and JavaScript. No frameworks, no dependencies — just copy, customize, and ship.
+
+**Live demo:** https://1homsi.github.io/responsive-landing-page-template/
 
 ---
 
 ## Features
 
+- **5 pages** — Home, About, Services, Pricing, Contact
 - **Responsive design** — works on mobile, tablet, and desktop
-- **Sticky navbar** with mobile hamburger menu
-- **Active nav link highlighting** via IntersectionObserver (no brittle scroll math)
-- **Smooth scrolling** between sections
-- **Hero, About, Services, and Footer** sections — ready to fill in
-- **FontAwesome icons** included
-- **Google Fonts** (Leckerli One + Kumbh Sans) pre-configured
+- **Sticky navbar** with mobile hamburger menu and blur effect
+- **Animated ticker** strip below the hero
+- **Scroll reveal animations** via IntersectionObserver
+- **Pricing page** with comparison table and FAQ
+- **Contact form** with field validation styles
+- **CSS variables** — swap colors in one place
+- **FontAwesome icons** + **Google Fonts** pre-configured
 - Zero dependencies — pure HTML/CSS/JS
-
----
-
-## Preview
-
-> Replace this section with a screenshot or GIF of your site.
 
 ---
 
@@ -27,10 +25,15 @@ A clean, modern, and fully responsive landing page template built with vanilla H
 
 ```
 .
-├── index.html      # Main HTML structure
-├── styles.css      # All styles and responsive breakpoints
-├── app.js          # Mobile menu toggle + active nav logic
-└── favicon.ico     # Site icon
+├── index.html          # Home page
+├── styles.css          # All styles (CSS variables, responsive breakpoints)
+├── app.js              # Mobile menu, scroll effects, reveal animations
+├── favicon.ico         # Site icon
+└── pages/
+    ├── about.html      # About + team
+    ├── services.html   # Services detail
+    ├── pricing.html    # Pricing cards + comparison table + FAQ
+    └── contact.html    # Contact form
 ```
 
 ---
@@ -38,38 +41,40 @@ A clean, modern, and fully responsive landing page template built with vanilla H
 ## Getting Started
 
 1. **Clone or download** this repo
-2. Open `index.html` in your browser — it works without a server
+2. Open `index.html` in your browser — no build step required
 3. Customize the placeholder text, colors, and icons to match your brand
 
 ### Customize Colors
 
-The main gradient palette is defined inline in `styles.css`. Search for these hex values to swap them:
+All brand colors are CSS variables at the top of `styles.css`:
 
-| Color | Hex |
-|---|---|
-| Pink | `#cc2b5e` |
-| Purple | `#753a88` |
-| Coral | `#de6262` |
-| Red | `#eb3349` |
+| Variable | Default | Role |
+|---|---|---|
+| `--color-primary` | `#cc2b5e` | Pink accent |
+| `--color-secondary` | `#753a88` | Purple accent |
+| `--gradient` | pink → purple | Buttons, highlights |
+| `--text` | `#0f0e17` | Body text |
+| `--bg-muted` | `#faf8fc` | Alternate section bg |
 
 ### Add / Remove Service Cards
 
-Service cards live in `index.html` inside `.services__wrapper`. Copy or delete a `.services__card` block to adjust the count. The grid auto-adapts (4 → 2 → 1 column at breakpoints).
+Service cards are in `index.html` inside `.services__grid`. Copy or delete a `.service-card` block — the grid auto-adapts (4 → 2 → 1 column).
 
 ### Update Social Links
 
-Find the `.social__icons` section in `index.html` and replace the `href="/"` placeholders with your real profile URLs.
+Find `.footer__socials` in any page and replace `href="/"` with your real profile URLs.
 
 ---
 
-## Sections
+## Pages
 
-| Section | ID | Description |
+| Page | File | Description |
 |---|---|---|
-| Hero | `#home` | Full-width headline + CTA |
-| About | `#about` | Two-column content + image card |
-| Services | `#services` | 4-card grid |
-| Footer | — | Logo, copyright, social icons |
+| Home | `index.html` | Hero, ticker, about preview, services, CTA |
+| About | `pages/about.html` | Mission, values grid, team cards |
+| Services | `pages/services.html` | Service detail cards |
+| Pricing | `pages/pricing.html` | 3-tier pricing, comparison table, FAQ |
+| Contact | `pages/contact.html` | Contact form + info |
 
 ---
 
