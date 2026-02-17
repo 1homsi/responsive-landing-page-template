@@ -4,23 +4,27 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A clean, responsive landing page template built with HTML, CSS, and vanilla JavaScript. Free to use and customize." />
+  <meta property="og:title" content="Placeholder Demo" />
+  <meta property="og:description" content="A clean, responsive landing page template built with HTML, CSS, and vanilla JavaScript." />
+  <meta property="og:type" content="website" />
   <title>Placeholder Demo</title>
   <link rel="icon" href="./favicon.ico" />
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
     integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous" />
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Leckerli+One&family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <nav class="navbar">
     <div class="navbar__container">
       <a href="#home" id="navbar__logo">Placeholder</a>
-      <div class="navbar__toggle" id="mobile-menu">
+      <button class="navbar__toggle" id="mobile-menu" aria-label="Toggle navigation menu" aria-expanded="false">
         <span class="bar"></span> <span class="bar"></span>
         <span class="bar"></span>
-      </div>
+      </button>
       <ul class="navbar__menu">
         <li class="navbar__item">
           <a href="#home" class="navbar__links" id="home-page">Home</a>
@@ -38,6 +42,7 @@
     </div>
   </nav>
 
+  <main>
   <div class="hero" id="home">
     <div class="hero__container">
       <h1 class="hero__heading">Why choose <span>Us</span></h1>
@@ -49,8 +54,8 @@
   <div class="main" id="about">
     <div class="main__container">
       <div class="main__content">
-        <h1>What do we do?</h1>
-        <h2>We develope all sorts of products</h2>
+        <h2>What do we do?</h2>
+        <h3>We develop all sorts of products</h3>
         <p>Check out our services</p>
         <button class="main__btn"><a href="#">Schedule Call</a></button>
       </div>
@@ -61,7 +66,7 @@
   </div>
 
   <div class="services" id="services">
-    <h1>Our Services</h1>
+    <h2>Our Services</h2>
     <div class="services__wrapper">
       <div class="services__card">
         <h2>Custom</h2>
@@ -86,13 +91,15 @@
     </div>
   </div>
 
+  </main>
+
   <div class="footer__container">
     <section class="social__media">
       <div class="social__media--wrap">
         <div class="footer__logo">
           <a href="/" id="footer__logo">Placeholder</a>
         </div>
-        <p class="website__rights">©2020-2021, Placeholder. All rights reserved</p>
+        <p class="website__rights">©2024 Placeholder. All rights reserved</p>
         <div class="social__icons">
           <a href="/" class="social__icon--link" target="_blank"><i class="fab fa-facebook"></i></a>
           <a href="/" class="social__icon--link"><i class="fab fa-instagram"></i></a>
