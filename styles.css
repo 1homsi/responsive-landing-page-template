@@ -78,12 +78,17 @@ html {
 }
 
 .navbar__toggle {
-  display: none;
   background: none;
   border: none;
   outline: none;
   padding: 0;
   cursor: pointer;
+}
+
+@media screen and (min-width: 961px) {
+  .navbar__toggle {
+    display: none;
+  }
 }
 
 .button {
