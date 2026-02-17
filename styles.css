@@ -1310,6 +1310,132 @@ h1, h2, h3, h4 {
 }
 
 /* ============================================
+   PRICING PAGE — COMPARISON TABLE
+   ============================================ */
+.compare-table {
+  overflow-x: auto;
+  border-radius: var(--r-lg);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-sm);
+}
+
+.compare-table table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.compare-table thead tr {
+  background: var(--bg-muted);
+}
+
+.compare-table th {
+  padding: 16px 20px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+  border-bottom: 1px solid var(--border);
+}
+
+.compare-table th:first-child {
+  text-align: left;
+  color: var(--text);
+}
+
+.compare-table td {
+  padding: 14px 20px;
+  text-align: center;
+  color: var(--text-muted);
+  border-bottom: 1px solid var(--border);
+}
+
+.compare-table tr:last-child td {
+  border-bottom: none;
+}
+
+.compare-table td:first-child {
+  text-align: left;
+  font-weight: 500;
+  color: var(--text);
+}
+
+.compare-table tr:hover td {
+  background: var(--bg-muted);
+}
+
+.compare-table__featured {
+  background: rgba(204, 43, 94, 0.04);
+  color: var(--text) !important;
+  font-weight: 600 !important;
+}
+
+.compare-table th.compare-table__featured {
+  color: var(--color-primary) !important;
+}
+
+.compare-table__yes {
+  color: var(--color-primary);
+  font-size: 14px;
+}
+
+.compare-table__no {
+  color: var(--border);
+  font-size: 14px;
+}
+
+/* ============================================
+   PRICING PAGE — FAQ
+   ============================================ */
+.faq__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.faq__item {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--r-md);
+  padding: 24px 28px;
+  transition: all 0.3s ease;
+}
+
+.faq__item:hover {
+  border-color: rgba(204, 43, 94, 0.2);
+  box-shadow: var(--shadow-sm);
+}
+
+.faq__question {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 10px;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.faq__question i {
+  color: var(--color-primary);
+  font-size: 14px;
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+
+.faq__answer {
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.7;
+  padding-left: 24px;
+}
+
+/* ============================================
    CONTACT PAGE
    ============================================ */
 .contact__grid {
@@ -1494,6 +1620,7 @@ h1, h2, h3, h4 {
   .pricing-card--featured { transform: scale(1); }
 
   .contact__grid { grid-template-columns: 1fr; gap: 48px; }
+  .faq__grid { grid-template-columns: 1fr; }
 }
 
 /* ============================================
