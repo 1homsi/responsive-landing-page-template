@@ -1,0 +1,46 @@
+/* ============================================
+   CTA BANNER
+   ============================================ */
+.cta-banner {
+  padding: var(--space-section) 0;
+  background: var(--gradient);
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.cta-banner::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle, rgba(255,255,255,0.06) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+.cta-banner__content {
+  position: relative;
+  z-index: 1;
+}
+
+.cta-banner h2 {
+  font-size: clamp(28px, 4vw, 46px);
+  color: #fff;
+  margin-bottom: 14px;
+}
+
+.cta-banner p {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.78);
+  margin-bottom: 36px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.7;
+}
+
+.cta-banner__actions {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}

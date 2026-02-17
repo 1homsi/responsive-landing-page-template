@@ -1,0 +1,90 @@
+/* ============================================
+   FOOTER
+   ============================================ */
+.footer {
+  background: #0f0e17;
+  color: rgba(255, 255, 255, 0.6);
+  padding: 64px 0 32px;
+}
+
+.footer__grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 48px;
+  margin-bottom: 48px;
+}
+
+.footer__logo {
+  font-family: 'Leckerli One', cursive;
+  font-size: 28px;
+  font-weight: 400;
+  color: #fff;
+  display: block;
+  margin-bottom: 14px;
+}
+
+.footer__tagline {
+  font-size: 14px;
+  line-height: 1.75;
+  margin-bottom: 24px;
+  max-width: 240px;
+}
+
+.footer__socials {
+  display: flex;
+  gap: 10px;
+}
+
+.footer__social {
+  width: 36px;
+  height: 36px;
+  background: rgba(255, 255, 255, 0.07);
+  border-radius: var(--r-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+
+.footer__social:hover {
+  background: var(--gradient);
+  color: #fff;
+}
+
+.footer__col-title {
+  font-weight: 700;
+  color: #fff;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 18px;
+}
+
+.footer__links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer__link {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.48);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer__link:hover {
+  color: #fff;
+}
+
+.footer__bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.07);
+  padding-top: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 13px;
+}

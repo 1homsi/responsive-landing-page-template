@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Page not found." />
+  <title>Placeholder — 404 Not Found</title>
+  <link rel="icon" href="./favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Leckerli+One&family=Playfair+Display:wght@700&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav__container">
+      <a href="./index.html" class="nav__logo">Placeholder</a>
+      <ul class="nav__menu" id="nav-menu">
+        <li><a href="./index.html" class="nav__link">Home</a></li>
+        <li><a href="./pages/about.html" class="nav__link">About</a></li>
+        <li><a href="./pages/services.html" class="nav__link">Services</a></li>
+        <li><a href="./pages/pricing.html" class="nav__link">Pricing</a></li>
+        <li><a href="./pages/contact.html" class="nav__cta">Get Started</a></li>
+      </ul>
+      <button class="nav__toggle" id="mobile-menu" aria-label="Toggle navigation" aria-expanded="false">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </nav>
+
+  <main>
+    <div class="error-page">
+      <div>
+        <div class="error-page__code" aria-hidden="true">404</div>
+        <div class="error-page__content">
+          <h1>Page not found</h1>
+          <p>Sorry, we couldn't find the page you're looking for. It may have been moved, deleted, or never existed.</p>
+          <div class="error-page__actions">
+            <a href="./index.html" class="btn btn--primary btn--lg">
+              <i class="fas fa-home"></i> Go Home
+            </a>
+            <a href="./pages/contact.html" class="btn btn--outline btn--lg">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <a href="./index.html" class="footer__logo">Placeholder</a>
+          <p class="footer__tagline">A clean, responsive website template. Customize it, make it yours, and ship faster.</p>
+          <div class="footer__socials">
+            <a href="/" class="footer__social" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="/" class="footer__social" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="/" class="footer__social" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="/" class="footer__social" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="/" class="footer__social" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <div>
+          <p class="footer__col-title">Quick Links</p>
+          <ul class="footer__links">
+            <li><a href="./index.html" class="footer__link">Home</a></li>
+            <li><a href="./pages/about.html" class="footer__link">About</a></li>
+            <li><a href="./pages/services.html" class="footer__link">Services</a></li>
+            <li><a href="./pages/pricing.html" class="footer__link">Pricing</a></li>
+            <li><a href="./pages/blog.html" class="footer__link">Blog</a></li>
+            <li><a href="./pages/portfolio.html" class="footer__link">Portfolio</a></li>
+            <li><a href="./pages/faq.html" class="footer__link">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer__col-title">Services</p>
+          <ul class="footer__links">
+            <li><a href="./pages/services.html" class="footer__link">Web Development</a></li>
+            <li><a href="./pages/services.html" class="footer__link">Mobile Apps</a></li>
+            <li><a href="./pages/services.html" class="footer__link">UI/UX Design</a></li>
+            <li><a href="./pages/services.html" class="footer__link">Growth &amp; SEO</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer__col-title">Contact</p>
+          <ul class="footer__links">
+            <li><a href="mailto:hello@placeholder.com" class="footer__link">hello@placeholder.com</a></li>
+            <li><a href="tel:+11234567890" class="footer__link">+1 (123) 456-7890</a></li>
+            <li><span class="footer__link">123 Main Street</span></li>
+            <li><span class="footer__link">New York, NY 10001</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&#169; 2024 Placeholder. All rights reserved.</p>
+        <p>MIT License — free to use and customize.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+
+</html>

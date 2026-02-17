@@ -64,3 +64,40 @@ document.querySelectorAll('.reveal').forEach((el) => {
   el.dataset.delay = siblings.indexOf(el) * 90;
   revealObserver.observe(el);
 });
+
+/* ============================================
+   FAQ ACCORDION
+   ============================================ */
+document.querySelectorAll('.faq-accordion__question').forEach((btn) => {
+  btn.addEventListener('click', () => {
+    const item = btn.closest('.faq-accordion__item');
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-accordion__item.open').forEach((openItem) => {
+      openItem.classList.remove('open');
+    });
+    if (!isOpen) {
+      item.classList.add('open');
+    }
+  });
+});
+
+/* ============================================
+   PORTFOLIO FILTER
+   ============================================ */
+const filterBtns = document.querySelectorAll('.filter-btn');
+const portfolioCards = document.querySelectorAll('.portfolio-card');
+
+filterBtns.forEach((btn) => {
+  btn.addEventListener('click', () => {
+    filterBtns.forEach((b) => b.classList.remove('active'));
+    btn.classList.add('active');
+    const filter = btn.dataset.filter;
+    portfolioCards.forEach((card) => {
+      if (filter === 'all' || card.dataset.category === filter) {
+        card.style.display = '';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  });
+});

@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Explore our services and pricing plans." />
-  <title>Placeholder — Services</title>
+  <meta name="description" content="Browse our work — websites, apps, and design projects." />
+  <title>Placeholder — Portfolio</title>
   <link rel="icon" href="../favicon.ico" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -23,7 +23,7 @@
       <ul class="nav__menu" id="nav-menu">
         <li><a href="../index.html" class="nav__link">Home</a></li>
         <li><a href="./about.html" class="nav__link">About</a></li>
-        <li><a href="./services.html" class="nav__link active">Services</a></li>
+        <li><a href="./services.html" class="nav__link">Services</a></li>
         <li><a href="./pricing.html" class="nav__link">Pricing</a></li>
         <li><a href="./contact.html" class="nav__cta">Get Started</a></li>
       </ul>
@@ -43,55 +43,109 @@
         <nav class="page-header__breadcrumb" aria-label="Breadcrumb">
           <a href="../index.html">Home</a>
           <span aria-hidden="true">/</span>
-          <span>Services</span>
+          <span>Portfolio</span>
         </nav>
-        <h1>What we <span class="gradient-text">offer</span></h1>
-        <p>From concept to launch and beyond — everything your project needs, handled with care.</p>
+        <h1>Our <span class="gradient-text">work</span></h1>
+        <p>A selection of projects we're proud of — from marketing sites to full-scale web applications.</p>
       </div>
     </div>
 
-    <!-- SERVICES DETAIL -->
+    <!-- PORTFOLIO -->
     <section class="section">
       <div class="container">
-        <div class="section__header section__header--center">
-          <span class="section__label">Our Expertise</span>
-          <h2 class="section__heading">Services built for <span class="gradient-text">real results</span></h2>
-          <p class="section__subtext">We focus on the things that move the needle — great design, clean code, and growth strategies that work.</p>
+        <div class="blog__filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="web">Web</button>
+          <button class="filter-btn" data-filter="mobile">Mobile</button>
+          <button class="filter-btn" data-filter="design">Design</button>
         </div>
-        <div class="services-detail__grid">
-          <div class="services-detail__card reveal">
-            <div class="services-detail__icon"><i class="fas fa-code"></i></div>
-            <h3 class="services-detail__title">Web Development</h3>
-            <p class="services-detail__text">We build fast, accessible, and SEO-friendly websites and web applications from the ground up. Whether you need a marketing site or a complex web app, we deliver clean, maintainable code.</p>
-            <ul class="services-detail__features">
-              <li class="services-detail__feature"><i class="fas fa-check-circle"></i> Custom HTML/CSS/JS or framework-based</li>
-              <li class="services-detail__feature"><i class="fas fa-check-circle"></i> Performance-optimized and SEO-ready</li>
-              <li class="services-detail__feature"><i class="fas fa-check-circle"></i> Fully responsive across all devices</li>
-              <li class="services-detail__feature"><i class="fas fa-check-circle"></i> CMS integration available</li>
-            </ul>
+        <div class="portfolio__grid">
+
+          <div class="portfolio-card reveal" data-category="web">
+            <div class="portfolio-card__image">
+              <i class="fas fa-globe"></i>
+              <div class="portfolio-card__overlay">
+                <h3>Acme Corp Rebrand</h3>
+                <p>Full website redesign and CMS integration for a growing SaaS company.</p>
+                <div>
+                  <span class="portfolio-card__tag">Web</span>
+                  <span class="portfolio-card__tag">Design</span>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="services-detail__card reveal">
-            <div class="services-detail__icon"><i class="fas fa-mobile-alt"></i></div>
-            <h3 class="services-detail__title">Mobile Apps</h3>
-            <p class="services-detail__text">Cross-platform mobile applications that feel native on iOS and Android. Built with modern frameworks, tested thoroughly, and designed for real-world usage patterns.</p>
-            <ul class="services-detail__features">
-              <li class="services-detail__feature"><i class="fas fa-check-circle"></i> iOS and Android from one codebase</li>
-              <li class="services-detail__feature"><i class="fas fa-check-circle"></i> Native-like performance and feel</li>
-              <li class="services-detail__feature"><i class="fas fa-check-circle"></i> App Store &amp; Play Store deployment</li>
-              <li class="services-detail__feature"><i class="fas fa-check-circle"></i> Ongoing maintenance plans</li>
-            </ul>
+
+          <div class="portfolio-card reveal" data-category="mobile">
+            <div class="portfolio-card__image">
+              <i class="fas fa-mobile-alt"></i>
+              <div class="portfolio-card__overlay">
+                <h3>Horizon App</h3>
+                <p>Cross-platform mobile app for tracking habits and personal goals.</p>
+                <div>
+                  <span class="portfolio-card__tag">Mobile</span>
+                  <span class="portfolio-card__tag">iOS</span>
+                  <span class="portfolio-card__tag">Android</span>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="services-detail__card reveal">
-            <div class="services-detail__icon"><i class="fas fa-paint-brush"></i></div>
-            <h3 class="services-detail__title">UI/UX Design</h3>
-            <p class="services-detail__text">Thoughtful, user-centered design grounded in research. From wireframes to polished high-fidelity mockups — we create interfaces that are both beautiful and intuitive.</p>
-            <ul class="services-detail__features">
-              <li class="services-detail__feature"><i class="fas fa-check-circle"></i> User research and journey mapping</li>
-              <li class="services-detail__feature"><i class="fas fa-check-circle"></i> Wireframes and interactive prototypes</li>
-              <li class="services-detail__feature"><i class="fas fa-check-circle"></i> Design systems and component libraries</li>
-              <li class="services-detail__feature"><i class="fas fa-check-circle"></i> Handoff-ready Figma files</li>
-            </ul>
+
+          <div class="portfolio-card reveal" data-category="design">
+            <div class="portfolio-card__image">
+              <i class="fas fa-paint-brush"></i>
+              <div class="portfolio-card__overlay">
+                <h3>Stellar Design System</h3>
+                <p>Component library and design tokens for a product team of 30+ designers and developers.</p>
+                <div>
+                  <span class="portfolio-card__tag">Design</span>
+                  <span class="portfolio-card__tag">Systems</span>
+                </div>
+              </div>
+            </div>
           </div>
+
+          <div class="portfolio-card reveal" data-category="web">
+            <div class="portfolio-card__image">
+              <i class="fas fa-shopping-cart"></i>
+              <div class="portfolio-card__overlay">
+                <h3>Nexus Store</h3>
+                <p>E-commerce platform with custom checkout flow and inventory management dashboard.</p>
+                <div>
+                  <span class="portfolio-card__tag">Web</span>
+                  <span class="portfolio-card__tag">E-commerce</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-card reveal" data-category="mobile">
+            <div class="portfolio-card__image">
+              <i class="fas fa-utensils"></i>
+              <div class="portfolio-card__overlay">
+                <h3>Apex Delivery</h3>
+                <p>Food delivery app with real-time order tracking and driver assignment system.</p>
+                <div>
+                  <span class="portfolio-card__tag">Mobile</span>
+                  <span class="portfolio-card__tag">Real-time</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-card reveal" data-category="design">
+            <div class="portfolio-card__image">
+              <i class="fas fa-chart-bar"></i>
+              <div class="portfolio-card__overlay">
+                <h3>Catalyst Dashboard</h3>
+                <p>Analytics dashboard UI with data visualizations and customizable widgets.</p>
+                <div>
+                  <span class="portfolio-card__tag">Design</span>
+                  <span class="portfolio-card__tag">Dashboard</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
@@ -100,11 +154,11 @@
     <section class="cta-banner">
       <div class="container">
         <div class="cta-banner__content">
-          <h2>Ready to get started?</h2>
-          <p>Check out our pricing or reach out to talk about your project.</p>
+          <h2>Like what you see?</h2>
+          <p>Let's talk about your project. We'd love to add it to this list.</p>
           <div class="cta-banner__actions">
-            <a href="./pricing.html" class="btn btn--white btn--lg">View Pricing</a>
-            <a href="./contact.html" class="btn btn--ghost btn--lg">Get in Touch</a>
+            <a href="./contact.html" class="btn btn--white btn--lg">Start a Project</a>
+            <a href="./pricing.html" class="btn btn--ghost btn--lg">View Pricing</a>
           </div>
         </div>
       </div>

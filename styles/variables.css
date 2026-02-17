@@ -1,0 +1,38 @@
+/* ============================================
+   CSS VARIABLES
+   ============================================ */
+:root {
+  /* Brand */
+  --color-primary: #cc2b5e;
+  --color-secondary: #753a88;
+  --gradient: linear-gradient(135deg, #cc2b5e 0%, #753a88 100%);
+
+  /* Surfaces */
+  --bg: #ffffff;
+  --bg-muted: #faf8fc;
+  --bg-card: #ffffff;
+
+  /* Text */
+  --text: #0f0e17;
+  --text-muted: #6e6b7b;
+
+  /* Borders & Shadows */
+  --border: #ede8f4;
+  --shadow-sm: 0 2px 8px rgba(115, 58, 136, 0.06);
+  --shadow-md: 0 6px 24px rgba(115, 58, 136, 0.10);
+  --shadow-lg: 0 16px 56px rgba(115, 58, 136, 0.16);
+
+  /* Layout */
+  --nav-height: 72px;
+  --max-w: 1200px;
+  --gutter: 32px;
+
+  /* Radius */
+  --r-sm: 8px;
+  --r-md: 12px;
+  --r-lg: 20px;
+  --r-full: 999px;
+
+  /* Section spacing */
+  --space-section: 96px;
+}

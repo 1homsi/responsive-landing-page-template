@@ -1,0 +1,127 @@
+/* ============================================
+   RESPONSIVE — TABLET
+   ============================================ */
+@media screen and (max-width: 1024px) {
+  :root {
+    --space-section: 72px;
+    --gutter: 24px;
+  }
+
+  .hero__container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .hero__description { max-width: 100%; }
+  .hero__actions { justify-content: center; }
+  .hero__badge { display: none; }
+  .hero__visual { padding: 0; }
+
+  .about-home__grid { grid-template-columns: 1fr; gap: 48px; }
+  .about-home__visual { height: 280px; }
+  .about-home__main-card { right: 40px; bottom: 40px; }
+
+  .services__grid { grid-template-columns: repeat(2, 1fr); }
+
+  .trust-strip__logos { gap: 28px; }
+
+  .process__grid { grid-template-columns: 1fr; gap: 40px; }
+  .process__grid::before { display: none; }
+
+  .testimonials__grid { grid-template-columns: 1fr 1fr; }
+
+  .footer__grid { grid-template-columns: 1fr 1fr; gap: 32px; }
+
+  .team__grid { grid-template-columns: repeat(2, 1fr); }
+  .values__grid { grid-template-columns: repeat(2, 1fr); }
+  .services-detail__grid { grid-template-columns: 1fr 1fr; }
+  .mission__grid { grid-template-columns: 1fr; gap: 40px; }
+
+  .pricing__grid { grid-template-columns: 1fr; max-width: 440px; margin: 0 auto; }
+  .pricing-card--featured { transform: scale(1); }
+
+  .contact__grid { grid-template-columns: 1fr; gap: 48px; }
+  .faq__grid { grid-template-columns: 1fr; }
+
+  .blog__grid { grid-template-columns: repeat(2, 1fr); }
+  .portfolio__grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* ============================================
+   RESPONSIVE — MOBILE
+   ============================================ */
+@media screen and (max-width: 768px) {
+  :root {
+    --space-section: 56px;
+    --gutter: 20px;
+  }
+
+  /* Navbar mobile */
+  .nav__menu {
+    position: fixed;
+    top: var(--nav-height);
+    left: 0;
+    right: 0;
+    background: #fff;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 12px 0 20px;
+    border-bottom: 1px solid var(--border);
+    box-shadow: var(--shadow-md);
+    display: none;
+    z-index: 999;
+  }
+
+  .nav__menu.active { display: flex; }
+
+  .nav__link {
+    height: auto;
+    padding: 13px 24px;
+  }
+
+  .nav__link::after { display: none; }
+
+  .nav__cta {
+    margin: 6px 20px 0;
+    justify-content: center;
+  }
+
+  .nav__toggle { display: flex; }
+
+  /* Hero */
+  .hero { padding: 56px 0 48px; }
+
+  /* Services */
+  .services__grid { grid-template-columns: 1fr; }
+
+  /* Testimonials */
+  .testimonials__grid { grid-template-columns: 1fr; }
+
+  /* Newsletter */
+  .newsletter__form { flex-direction: column; }
+
+  /* Footer */
+  .footer__grid { grid-template-columns: 1fr; gap: 28px; }
+  .footer__bottom { flex-direction: column; gap: 10px; text-align: center; }
+
+  /* Sub-pages */
+  .team__grid { grid-template-columns: repeat(2, 1fr); }
+  .values__grid { grid-template-columns: 1fr; }
+  .services-detail__grid { grid-template-columns: 1fr; }
+
+  .contact-form { padding: 28px 20px; }
+  .form__row { grid-template-columns: 1fr; }
+
+  /* Extra pages */
+  .blog__grid { grid-template-columns: 1fr; }
+  .portfolio__grid { grid-template-columns: 1fr; }
+}
+
+@media screen and (max-width: 480px) {
+  .team__grid { grid-template-columns: 1fr; }
+  .hero__actions { flex-direction: column; align-items: stretch; }
+  .hero__actions .btn { justify-content: center; }
+  .trust-strip__logos { gap: 16px; }
+  .trust-strip__logo { font-size: 16px; }
+}
