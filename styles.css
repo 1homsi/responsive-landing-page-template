@@ -152,6 +152,7 @@ html {
   }
 
   .navbar__toggle .bar {
+    display: block;
     width: 25px;
     height: 3px;
     margin: 5px auto;
