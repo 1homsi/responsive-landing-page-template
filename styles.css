@@ -77,6 +77,15 @@ html {
   width: 100%;
 }
 
+.navbar__toggle {
+  display: none;
+  background: none;
+  border: none;
+  outline: none;
+  padding: 0;
+  cursor: pointer;
+}
+
 .button {
   display: flex;
   justify-content: center;
@@ -170,15 +179,11 @@ html {
   }
 
   #mobile-menu {
+    display: block;
     position: absolute;
     top: 20%;
     right: 5%;
     transform: translate(5%, 20%);
-  }
-
-  .navbar__toggle .bar {
-    display: block;
-    cursor: pointer;
   }
 
   #mobile-menu.is-active .bar:nth-child(2) {
@@ -197,8 +202,8 @@ html {
 /* Hero Section */
 .hero {
   background: #fff;
-  /* background: linear-gradient(to right, #fff, #fff); */
-  padding: 200px 0;
+  padding: 160px 0 180px;
+  border-bottom: 1px solid #eee;
 }
 
 .hero__container {
@@ -271,8 +276,10 @@ html {
 
 /* About Section */
 .main {
-  background-color: #fff;
+  background-color: #f8f8f8;
   padding: 10rem 0;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
 }
 
 .main__container {
@@ -473,6 +480,7 @@ html {
   align-items: center;
   height: 100%;
   padding: 10rem 0;
+  border-bottom: 1px solid #eee;
 }
 
 .services h2 {
