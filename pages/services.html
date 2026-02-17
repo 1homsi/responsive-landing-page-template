@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Explore our services and pricing plans." />
+  <title>Placeholder — Services</title>
+  <link rel="icon" href="../favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Leckerli+One&family=Playfair+Display:wght@700&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous" />
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav__container">
+      <a href="../index.html" class="nav__logo">Placeholder</a>
+      <ul class="nav__menu" id="nav-menu">
+        <li><a href="../index.html" class="nav__link">Home</a></li>
+        <li><a href="./about.html" class="nav__link">About</a></li>
+        <li><a href="./services.html" class="nav__link active">Services</a></li>
+        <li><a href="./contact.html" class="nav__link">Contact</a></li>
+        <li><a href="./contact.html" class="nav__cta">Get Started</a></li>
+      </ul>
+      <button class="nav__toggle" id="mobile-menu" aria-label="Toggle navigation" aria-expanded="false">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- PAGE HEADER -->
+    <div class="page-header">
+      <div class="container">
+        <nav class="page-header__breadcrumb" aria-label="Breadcrumb">
+          <a href="../index.html">Home</a>
+          <span aria-hidden="true">/</span>
+          <span>Services</span>
+        </nav>
+        <h1>What we <span class="gradient-text">offer</span></h1>
+        <p>From concept to launch and beyond — everything your project needs, handled with care.</p>
+      </div>
+    </div>
+
+    <!-- SERVICES DETAIL -->
+    <section class="section">
+      <div class="container">
+        <div class="section__header section__header--center">
+          <span class="section__label">Our Expertise</span>
+          <h2 class="section__heading">Services built for <span class="gradient-text">real results</span></h2>
+          <p class="section__subtext">We focus on the things that move the needle — great design, clean code, and growth strategies that work.</p>
+        </div>
+        <div class="services-detail__grid">
+          <div class="services-detail__card reveal">
+            <div class="services-detail__icon"><i class="fas fa-code"></i></div>
+            <h3 class="services-detail__title">Web Development</h3>
+            <p class="services-detail__text">We build fast, accessible, and SEO-friendly websites and web applications from the ground up. Whether you need a marketing site or a complex web app, we deliver clean, maintainable code.</p>
+            <ul class="services-detail__features">
+              <li class="services-detail__feature"><i class="fas fa-check-circle"></i> Custom HTML/CSS/JS or framework-based</li>
+              <li class="services-detail__feature"><i class="fas fa-check-circle"></i> Performance-optimized and SEO-ready</li>
+              <li class="services-detail__feature"><i class="fas fa-check-circle"></i> Fully responsive across all devices</li>
+              <li class="services-detail__feature"><i class="fas fa-check-circle"></i> CMS integration available</li>
+            </ul>
+          </div>
+          <div class="services-detail__card reveal">
+            <div class="services-detail__icon"><i class="fas fa-mobile-alt"></i></div>
+            <h3 class="services-detail__title">Mobile Apps</h3>
+            <p class="services-detail__text">Cross-platform mobile applications that feel native on iOS and Android. Built with modern frameworks, tested thoroughly, and designed for real-world usage patterns.</p>
+            <ul class="services-detail__features">
+              <li class="services-detail__feature"><i class="fas fa-check-circle"></i> iOS and Android from one codebase</li>
+              <li class="services-detail__feature"><i class="fas fa-check-circle"></i> Native-like performance and feel</li>
+              <li class="services-detail__feature"><i class="fas fa-check-circle"></i> App Store &amp; Play Store deployment</li>
+              <li class="services-detail__feature"><i class="fas fa-check-circle"></i> Ongoing maintenance plans</li>
+            </ul>
+          </div>
+          <div class="services-detail__card reveal">
+            <div class="services-detail__icon"><i class="fas fa-paint-brush"></i></div>
+            <h3 class="services-detail__title">UI/UX Design</h3>
+            <p class="services-detail__text">Thoughtful, user-centered design grounded in research. From wireframes to polished high-fidelity mockups — we create interfaces that are both beautiful and intuitive.</p>
+            <ul class="services-detail__features">
+              <li class="services-detail__feature"><i class="fas fa-check-circle"></i> User research and journey mapping</li>
+              <li class="services-detail__feature"><i class="fas fa-check-circle"></i> Wireframes and interactive prototypes</li>
+              <li class="services-detail__feature"><i class="fas fa-check-circle"></i> Design systems and component libraries</li>
+              <li class="services-detail__feature"><i class="fas fa-check-circle"></i> Handoff-ready Figma files</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section class="section section--muted">
+      <div class="container">
+        <div class="section__header section__header--center">
+          <span class="section__label">Pricing</span>
+          <h2 class="section__heading">Simple, transparent <span class="gradient-text">pricing</span></h2>
+          <p class="section__subtext">No hidden fees. No surprises. Pick the plan that fits your project and we'll take it from there.</p>
+        </div>
+        <div class="pricing__grid">
+          <div class="pricing-card reveal">
+            <p class="pricing-card__name">Starter</p>
+            <p class="pricing-card__price">$499</p>
+            <p class="pricing-card__period">one-time</p>
+            <p class="pricing-card__desc">Perfect for individuals and small businesses that need a clean, professional web presence.</p>
+            <hr class="pricing-card__divider" />
+            <ul class="pricing-card__features">
+              <li class="pricing-card__feature"><i class="fas fa-check"></i> Up to 5 pages</li>
+              <li class="pricing-card__feature"><i class="fas fa-check"></i> Responsive design</li>
+              <li class="pricing-card__feature"><i class="fas fa-check"></i> Contact form</li>
+              <li class="pricing-card__feature"><i class="fas fa-check"></i> Basic SEO setup</li>
+              <li class="pricing-card__feature"><i class="fas fa-check"></i> 30-day support</li>
+            </ul>
+            <a href="./contact.html" class="btn btn--outline btn--full">Get Started</a>
+          </div>
+          <div class="pricing-card pricing-card--featured reveal">
+            <span class="pricing-card__badge">Most Popular</span>
+            <p class="pricing-card__name">Professional</p>
+            <p class="pricing-card__price">$1,299</p>
+            <p class="pricing-card__period">one-time</p>
+            <p class="pricing-card__desc">For growing businesses that need a full-featured website with custom design and functionality.</p>
+            <hr class="pricing-card__divider" />
+            <ul class="pricing-card__features">
+              <li class="pricing-card__feature"><i class="fas fa-check"></i> Up to 15 pages</li>
+              <li class="pricing-card__feature"><i class="fas fa-check"></i> Custom UI/UX design</li>
+              <li class="pricing-card__feature"><i class="fas fa-check"></i> CMS integration</li>
+              <li class="pricing-card__feature"><i class="fas fa-check"></i> Full SEO optimization</li>
+              <li class="pricing-card__feature"><i class="fas fa-check"></i> 90-day support</li>
+              <li class="pricing-card__feature"><i class="fas fa-check"></i> Analytics setup</li>
+            </ul>
+            <a href="./contact.html" class="btn btn--white btn--full">Get Started</a>
+          </div>
+          <div class="pricing-card reveal">
+            <p class="pricing-card__name">Enterprise</p>
+            <p class="pricing-card__price">Custom</p>
+            <p class="pricing-card__period">tailored to your needs</p>
+            <p class="pricing-card__desc">For teams and companies with complex requirements, ongoing needs, or large-scale projects.</p>
+            <hr class="pricing-card__divider" />
+            <ul class="pricing-card__features">
+              <li class="pricing-card__feature"><i class="fas fa-check"></i> Unlimited pages</li>
+              <li class="pricing-card__feature"><i class="fas fa-check"></i> Custom web application</li>
+              <li class="pricing-card__feature"><i class="fas fa-check"></i> API integrations</li>
+              <li class="pricing-card__feature"><i class="fas fa-check"></i> Dedicated account manager</li>
+              <li class="pricing-card__feature"><i class="fas fa-check"></i> Priority support &amp; SLA</li>
+              <li class="pricing-card__feature"><i class="fas fa-check"></i> Monthly retainer available</li>
+            </ul>
+            <a href="./contact.html" class="btn btn--outline btn--full">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA BANNER -->
+    <section class="cta-banner">
+      <div class="container">
+        <div class="cta-banner__content">
+          <h2>Not sure which plan fits?</h2>
+          <p>Let's hop on a call and figure it out together. No pressure, just a conversation.</p>
+          <div class="cta-banner__actions">
+            <a href="./contact.html" class="btn btn--white btn--lg">Schedule a Call</a>
+            <a href="./about.html" class="btn btn--ghost btn--lg">About Us</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <a href="../index.html" class="footer__logo">Placeholder</a>
+          <p class="footer__tagline">A clean, responsive website template. Customize it, make it yours, and ship faster.</p>
+          <div class="footer__socials">
+            <a href="/" class="footer__social" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="/" class="footer__social" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="/" class="footer__social" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="/" class="footer__social" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="/" class="footer__social" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <div>
+          <p class="footer__col-title">Quick Links</p>
+          <ul class="footer__links">
+            <li><a href="../index.html" class="footer__link">Home</a></li>
+            <li><a href="./about.html" class="footer__link">About</a></li>
+            <li><a href="./services.html" class="footer__link">Services</a></li>
+            <li><a href="./contact.html" class="footer__link">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer__col-title">Services</p>
+          <ul class="footer__links">
+            <li><a href="./services.html" class="footer__link">Web Development</a></li>
+            <li><a href="./services.html" class="footer__link">Mobile Apps</a></li>
+            <li><a href="./services.html" class="footer__link">UI/UX Design</a></li>
+            <li><a href="./services.html" class="footer__link">Growth &amp; SEO</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer__col-title">Contact</p>
+          <ul class="footer__links">
+            <li><a href="mailto:hello@placeholder.com" class="footer__link">hello@placeholder.com</a></li>
+            <li><a href="tel:+11234567890" class="footer__link">+1 (123) 456-7890</a></li>
+            <li><span class="footer__link">123 Main Street</span></li>
+            <li><span class="footer__link">New York, NY 10001</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&#169; 2024 Placeholder. All rights reserved.</p>
+        <p>MIT License — free to use and customize.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../app.js"></script>
+</body>
+
+</html>
